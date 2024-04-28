@@ -1,0 +1,46 @@
+/* App.css */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  /* Add styles for the header if needed */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.line-graph,
+.student-list {
+  width: 50%; /* Each component takes up 100% of the width initially */
+}
+
+/* Media query for screens larger than 768px (laptop and larger screens) */
+@media screen and (min-width: 768px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .line-graph,
+  .student-list {
+    width: 50%; /* Each component takes up 50% of the width on wider screens */
+  }
+}
+
+/* Media query for mobile phones */
+@media screen and (max-width: 576px) {
+  .line-graph,
+  .student-list {
+    width: 100%; /* Each component takes up 100% of the width on mobile phones */
+  }
+}
