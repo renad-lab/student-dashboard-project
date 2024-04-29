@@ -11,10 +11,6 @@ body {
   flex-direction: column;
 }
 
-.header {
-  /* Add styles for the header if needed */
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -22,10 +18,8 @@ body {
 
 .line-graph,
 .student-list {
-  width: 50%; /* Each component takes up 100% of the width initially */
+  width: 50%;
 }
-
-/* Media query for screens larger than 768px (laptop and larger screens) */
 @media screen and (min-width: 768px) {
   .content {
     flex-direction: row;
@@ -33,14 +27,13 @@ body {
 
   .line-graph,
   .student-list {
-    width: 50%; /* Each component takes up 50% of the width on wider screens */
+    width: 50%;
   }
 }
 
-/* Media query for mobile phones */
 @media screen and (max-width: 576px) {
   .line-graph,
   .student-list {
-    width: 100%; /* Each component takes up 100% of the width on mobile phones */
+    width: 100%;
   }
 }

@@ -1,7 +1,7 @@
 .studentcard {
   border: 1px solid black;
-  border-radius: 5px; /* Same border radius for all containers */
-  width: 100%; /* Make all containers the same width */
+  border-radius: 5px;
+  width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   display: flex;
