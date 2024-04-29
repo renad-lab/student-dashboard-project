@@ -1,3 +1,15 @@
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  padding: 0; 
+} */
+
+
+
+
+
 .student-list {
   display: flex;
   flex-direction: column;
@@ -16,8 +28,8 @@
 .on-track-column,
 .off-track-column {
   width: 100%;
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
-  max-width: 1200px; /* Increase max-width as needed */
+  box-sizing: border-box; Include padding and border in element's total width and height
+  max-width: 100%; /* Increase max-width as needed */
   margin: 0 auto; /* Center the columns */
 }
 
