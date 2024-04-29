@@ -1,18 +1,17 @@
-/* .line-graph-container {
-  width: 400px; /* Adjust width as needed */
-  height: 300px; /* Adjust height as needed */
-} */
+.line-graph-container {
+  width: 400px;
+  height: 300px;
+}
 
 .container {
-    text-align: center;
-  }
-  
-  .chart-container {
-    display: inline-block;
-  }
-  
-  .data-analysis-container {
-    margin-top: 20px;
-    text-align: left; /* Align text to the left within the container */
-  }
-  
+  text-align: center;
+}
+
+.chart-container {
+  display: inline-block;
+}
+
+.data-analysis-container {
+  margin-top: 20px;
+  text-align: left;
+}
