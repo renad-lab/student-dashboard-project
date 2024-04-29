@@ -1,30 +1,33 @@
 .student-list {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .dropdowns-container {
-  width: 25%; /* Adjust width as needed */
+  width: 25%;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px; /* Add some space below dropdowns */
+  margin-bottom: 20px;
   margin-left: 37%;
 }
 
 .on-track-column,
 .off-track-column {
-  width: 100%; /* Full width for student columns */
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  max-width: 1200px; /* Increase max-width as needed */
+  margin: 0 auto; /* Center the columns */
 }
 
 .on-track-column {
-  background-color: lightgreen; /* Light green background for on track students */
+  background-color: lightgreen;
   padding: 10px;
 }
 
 .off-track-column {
-  background-color: lightcoral; /* Light red background for off track students */
+  background-color: lightcoral;
   padding: 10px;
 }
 

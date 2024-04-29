@@ -44,10 +44,12 @@ function StudentList({ students }) {
       onTrackStudents = filteredStudents.filter((student) =>
         isOnTrack(student)
       );
+      filteredStudents = onTrackStudents; // Update filteredStudents with onTrackStudents
     } else if (selectedStatus === "Off Track") {
       offTrackStudents = filteredStudents.filter(
         (student) => !isOnTrack(student)
       );
+      filteredStudents = offTrackStudents; // Update filteredStudents with offTrackStudents
     } else {
       onTrackStudents = filteredStudents.filter((student) =>
         isOnTrack(student)
@@ -81,9 +83,7 @@ function StudentList({ students }) {
     });
 
     // Set state variables
-    setFilteredStudents(
-      selectedStatus === "All" ? filteredStudents : offTrackStudents
-    );
+    setFilteredStudents(filteredStudents);
     setTotalStudents(totalStudents);
     setTotalOnTrack(totalOnTrack);
     setTotalOffTrack(totalOffTrack);
